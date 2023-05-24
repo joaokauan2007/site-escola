@@ -1,26 +1,10 @@
- .cabeçalho {
-    background-color: blue;
-    color:black;
+body{
+    background-color: #210253;
+    color: rgb(107, 107, 211)
+}
+.cabecalho {
+    background-color: #383D58;
+    color: white;
     display:flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
- }
- 
- 
- .cabeçalhp-imagem{
-    width: 20%;
- }
- 
- 
- .cabeçalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
- }
- 
- 
- .escola-imagem{
-    width: 25%;
- }
- 
+    }
