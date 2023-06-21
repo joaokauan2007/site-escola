@@ -1,21 +1,13 @@
- {  
-    margin: 0;
-     padding: 0;
-} 
 
-.cabecalho {
-    background-color: #210253;
-    color: rgb(107, 107, 211)
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
+body{
+    font-family: poppins;
 }
+
 
 .cabecalho-imagem{
      width: 20%;
 }
-.cabecalho-lista-item
+    .cabecalho-lista-item{
     display: inline-block;
     margin: 0 16px;
     font-size: 24px;
@@ -33,5 +25,26 @@
 
 .escola-div-conteudo{
     width: 35%;
+}
+
+.estudante-imagem{
+    width: 120px;
+}
+
+.estudante-icone{
+    width: 24px;
+}
+
+.estudante-div{
+    text-align: center;
+}
+
+.escola-imagem{
+    text-align: center;
+    width: 25%;
+}
+
+.estudante-imagem{
+    
 }
    
