@@ -1,59 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-.body{
-    font-family: poppins;
+:root {
+    --cor-de-fundo: #000000;
+    --verde: #fcfcfc;
+    --branco: #ffffff;
+    --botao-ativo: #4eca6d;
+    --botao-inativo: rgba(55, 113, 219, 0.5);
+    --texto-fundo: rgb(21, 41, 151);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
-.cabecalho-imagem{
-     width: 20px;
-}
-    .cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
-}
-
-.escola-imagem{
-    width: 25%;
-}
-
-.escola{
-    background-image: linear-gradient(#210253,#4EBFE9);
-    color: white;
+.conteudo-principal {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.escola-div-conteudo{
-    width: 35px;
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
 
-.estudante-imagem{
-    width: 120%px;
+.titulo-principal span {
+    color: var(--verde);
 }
 
-.estudante-icone{
-    width: 24px;
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.estudante-div{
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+    display: block;
+}
+
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
     text-align: center;
 }
-
-.escola-imagem{
+.aba-conteudo-titulo-secundario{
     text-align: center;
-    width: 25%;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
-.estudante-titulo{
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
     text-align: center;
-    padding: 50px 0;
+    min-width: 100px;
 }
 
-.estudante-todos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
 
 }
-    
 
-   
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 15px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
